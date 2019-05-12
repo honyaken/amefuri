@@ -59,5 +59,3 @@ response = client.multicast(user_ids, message)
 end
 "OK"
 end
-
-end
