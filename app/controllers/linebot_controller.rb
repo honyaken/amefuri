@@ -15,7 +15,7 @@ class LinebotController < ApplicationController
     end
     events = client.parse_events_form(body)
     events.each{ |event|
-    case.event
+    case event
       # メッセージが送信された場合の対応（機能①）
     when Line::Bot::Event::MessageType::Text
 
