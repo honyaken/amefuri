@@ -52,7 +52,7 @@ push =
 # メッセージの発信先idを配列で渡す必要があるため、userテーブルよりpluck関数を使ってidを配列で取得
 user_ids = User.all.pluck(:line_id)
 message = {
-  type: 'text'
+  type: 'text',
   text: push
 }
 response = client.multicast(user_ids, message)
